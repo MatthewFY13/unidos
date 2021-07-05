@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum=scale=1.0">
 
     <meta name="description" content="Unidos por una sonrisa, eventos acádemicos por un bien social, sin fines de lucro.">
     <meta name="author" content="Unidos por una sonrisa">
@@ -30,6 +30,7 @@
 
 
     <title>Unidos por una sonrisa</title>
+    <script src="https://kit.fontawesome.com/392a03abe7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="shortcut icon" href="/assets/image/unidad.png" type="image/x-icon">
 </head>
@@ -41,29 +42,85 @@
             <div class="header__logo">
                 <img src="/assets/image/sonrisa.png" alt="Una sonrisa">
             </div>
-            <div class="menu">
+            <div class="menu" id="menu__phone">
                 <nav class="menu__navbar">
                     <ul class="menu__navbar_ul">
-                        <li class="menu__navbar_li"><a href="#">Inicio</a></li>
-                        <li class="menu__navbar_li"><a href="#">Somos</a></li>
-                        <li class="menu__navbar_li"><a href="#">Blog</a></li>
-                        <li class="menu__navbar_li"><a href="#">Contact</a></li>
+                        <li class="menu__navbar_li"><a href="#"><i class="fas fa-home"></i>Inicio</a></li>
+                        <li class="menu__navbar_li"><a href="#"><i class="fas fa-users"></i>Somos</a></li>
+                        <li class="menu__navbar_li"><a href="#"><i class="far fa-file-alt"></i>Blog</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
+
+        <div id="phone">
+            <i class="fas fa-bars"></i>
+        </div>
+
     </header>
+
 
     <!-- Slider -->
 
-    <div class="container__cover">
-        <div class="container__info__cover">
-            <h1 class="container__title">Unidos por una sonrisa</h1>
-            <p class="container__text">Este es el sitio web oficial, espero que tengan un buen día</p>
+    <div class="container__phone" id="phone__move">
+
+        <div class="container__cover">
+            <div class="container__info__cover">
+                <h1 class="container__title">Unidos por una sonrisa</h1>
+                <p class="container__text">Este es el sitio web oficial, espero que tengan un buen día</p>
+            </div>
         </div>
+        
+        <!-- Articulo -->
+
+        <div class="container__content">
+            <article class="article">
+                <h1 class="article__title">Titulo</h1>
+                <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nihil quasi, eaque, laboriosam dolorem amet iste mollitia reprehenderit voluptate quis debitis soluta, consequuntur ratione ex illum modi quod. Quod perspiciatis ut consequatur beatae vel neque enim provident nihil eveniet odio!</p>
+                <p class="article__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consectetur saepe aliquid. Id, recusandae, molestiae molestias, deleniti officia placeat debitis delectus voluptatum porro repudiandae excepturi quasi quis cupiditate ab iure reprehenderit a error nobis tenetur possimus! Aliquam harum dicta unde iure dolor! Dolorem incidunt aliquam officia fuga nisi repudiandae atque!</p>
+                <p class="article__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam enim sunt, dolore nulla animi dolorem a voluptatibus at nostrum ab temporibus deserunt esse autem eaque suscipit aliquid quod maxime quasi dolores architecto commodi soluta dolorum? Fugiat quae eaque numquam, deleniti repellendus modi. Iusto porro veritatis quae exercitationem voluptatum molestiae voluptatem cupiditate similique iste dicta eveniet quos, illum, fugit asperiores, aut mollitia pariatur magni quam repellat dolorum! Ad, sint distinctio nobis necessitatibus quos non vero ut omnis amet nesciunt officiis molestiae earum odit quia ducimus a voluptates veniam nisi qui odio sed et fugiat. Ex exercitationem et minima at nostrum ad.</p>
+            </article>
+
+            <div class="container__aside">
+
+                <aside class="aside">
+                    <img src="/assets/image/ayudando.jpg" alt="sonrisa">
+                    <h2 class="aside__title">Titulo</h2>
+                    <p class="aside__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, tempore?</p>
+                </aside>
+
+                <aside class="aside">
+                    <img src="/assets/image/ayudando.jpg" alt="sonrisa">
+                    <h2 class="aside__title">Titulo</h2>
+                    <p class="aside__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, tempore?</p>
+                </aside>
+
+
+            </div>
+
+        </div>
+
+        <!-- Encabezado del sitio web -->
+        <div class="container__footer">
+            <footer class="footer">
+                <div class="footer__logo">
+                    <img src="/assets/image/unidad.png" alt="">
+                </div>
+
+                <div class="footer__social">
+                    <a href="https://www.facebook.com/matt.franco.503645" target="_blank"><i class="fab fa-facebook-f icon__social__footer"></i></a>
+                    <a href="https://wa.link/7pj1wz" target="_blank"><i class="fab fa-whatsapp icon__social__footer"></i></a>
+                    <a href="https://www.instagram.com/tbt.matt/" target="_blank"><i class="fab fa-instagram icon__social__footer"></i></a>
+                </div>
+
+                <h3 class="footer__title">© 2021 Unidos por una sonrisa - Todos los derechos reservados</h3>
+            </footer>
+        </div>
+
     </div>
+    <!-- Script -->
 
-
+    <script src="/assets/js/script.js"></script>
 
 </body>
 </html>

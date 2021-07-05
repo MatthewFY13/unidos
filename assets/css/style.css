@@ -56,13 +56,35 @@
     color: #B881F6;
 }
 
+.menu .menu__navbar .menu__navbar_ul .menu__navbar_li i{
+    display: none;
+}
+
+#phone{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    font-size: 18px;
+    border-radius: 100%;
+    color: #a2a2a2;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#phone:hover{
+    background: #f2f2f2;
+}
+
 /* slider */
 
 .container__cover{
     width: 100%;
     height: 500px;
     position: relative;
-    top: 80px;
+    margin-top: 80px;
     background-image: url(/assets/image/ayudando.jpg);
     background-position: center;
     background-size: cover;
@@ -100,9 +122,183 @@
     color: #fff;
 }
 
+/* Todo el contenidor del articulo */
 
+.container__content{
+    width: 1000px;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.article{
+    width: 100%;
+    padding: 20px;
+    font-family: 'Roboto';
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.article:before{
+    content: '';
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #B881F6;
+}
+.article .article__title{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-family: 'Roboto';
+}
+.article .article__text{
+    margin-top: 10px;
+    font-size: 18px;
+    color: #555;
+}
 
+/* Mini articulos */
 
+.container__aside .aside{
+    width: 200px;
+    border-radius: 10px;
+    margin-left: 40px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+.container__aside .aside img{
+    width: 100%;
+}
+.container__aside .aside .aside__title,
+.container__aside .aside .aside__text{
+    margin-top: 10px;
+    padding: 0px 15px;
+}
+.container__aside .aside .aside__text{
+    color: #555;
+}
+
+/* Encabezado del sitio web */
+
+.container__footer{
+    width: 100%;
+    padding: 40px 0;
+    background: #f7f7f7;
+    margin-top: 40px;
+}
+.container__footer .footer{
+    max-width: 1000px;
+    margin: auto;
+}
+.container__footer .footer .footer__logo{
+    text-align: center;
+}
+.container__footer .footer .footer__social{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.container__footer .footer .footer__social .icon__social__footer{
+    font-size: 18px;
+    margin: 20px;
+    background: #efefef;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color: #a2a2a2;
+}
+
+.footer .footer__social .fa-facebook-f:hover{
+    color: #fff;
+    background: #41579A;
+}
+.footer .footer__social .fa-whatsapp:hover{
+    color: #fff;
+    background: #00bb2d;
+}
+.footer .footer__social .fa-instagram:hover{
+    color: #fff;
+    background: linear-gradient(to top right, #fcde30, #D2313B, #AE4198, #7540A1, #5443AB);
+}
+.container__footer .footer__title{
+    text-align: center;
+    margin-top: 10px;
+    color: #a2a2a2;
+    user-select: none;
+}
+
+/* Responsive */
+@media screen and (max-width: 1120px){
+    .header__content,
+    .container__content,
+    .container__footer footer{
+        max-width: 1000px;
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width: 1020px){
+    .container__content{
+        width: 100%;
+        flex-direction: column;
+    }
+    .container__aside{
+        display: flex;
+        justify-content: center;
+    }
+    .container__aside aside{
+        max-width: 250px;
+        margin: 10px;
+    }
+}
+@media screen and (max-width: 800px){
+    .container__phone{
+        transition: all 0.6s ease;
+    }
+    .move__container{
+        transform: translateX(-200px);
+    }
+    .menu{
+        width: 0px;
+        height: 100vh;
+        position: fixed;
+        top: 80px;
+        right: 0;
+        background: #fff;
+        transform: translateX(300px);
+        overflow: hidden;
+        transition: all 0.6s ease;
+    }
+    .menu__right{
+        width: 200px;
+        transform: translateX(-0px);
+    }
+    .menu .menu__navbar .menu__navbar_ul{
+        flex-direction: column;
+    }
+    .menu .menu__navbar .menu__navbar_ul .menu__navbar_li{
+        max-width: 200px;
+        height: 50px;
+        justify-content: flex-end;
+    }
+    .menu .menu__navbar .menu__navbar_ul .menu__navbar_li a{
+        margin-top: 50px;
+        color: #555;
+    }
+    .menu .menu__navbar .menu__navbar_ul .menu__navbar_li i{
+        display: inline-block;
+        margin-right: 10px;
+        color: #7540A1;
+    }
+    #phone{
+        display: flex;
+    }
+}
 
 
 
