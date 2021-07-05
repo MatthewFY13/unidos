@@ -181,6 +181,7 @@
     color: #555;
 }
 
+
 /* Encabezado del sitio web */
 
 .container__footer{
@@ -229,6 +230,7 @@
     color: #a2a2a2;
     user-select: none;
 }
+
 
 /* Responsive */
 @media screen and (max-width: 1120px){
