@@ -165,7 +165,7 @@
 .container__aside .aside{
     width: 200px;
     border-radius: 10px;
-    margin-left: 40px;
+    margin-left: 10px;
     overflow: hidden;
     margin-bottom: 40px;
 }
@@ -175,7 +175,7 @@
 .container__aside .aside .aside__title,
 .container__aside .aside .aside__text{
     margin-top: 10px;
-    padding: 0px 15px;
+    padding: 0px 20px;
 }
 .container__aside .aside .aside__text{
     color: #555;
