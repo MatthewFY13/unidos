@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    box-shadow: 0 5px 25px -22px #000;
+    z-index: 2;
+}
+.header__content{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.header__logo{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__logo img{
+    width: 60px;
+}
+.menu{
+    height: 80px;
+}
+.menu .menu__navbar{
+    height: 100%;
+}
+.menu .menu__navbar_ul{
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+.menu .menu__navbar_ul .menu__navbar_li{
+    height: 100%;
+    margin: 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.menu .menu__navbar_ul .menu__navbar_li a{
+    color: #B881F6;
+}
+
+/* slider */
+
+.container__cover{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    top: 80px;
+    background-image: url(/assets/image/ayudando.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    user-select: none;
+}
+.container__cover:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #d4b2fa9a;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.container__info__cover{
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+.container__info__cover .container__title{
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.container__info__cover .container__text{
+    font-size: 18px;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
